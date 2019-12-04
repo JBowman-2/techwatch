@@ -1,0 +1,29 @@
+
+main, footer {
+    max-width: 80rem;
+    margin: auto;
+}
+
+nav ul li a {
+    padding: .6rem 1rem;
+}
+
+main div.story {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+    figure:nth-child(1){
+        grid-column: 1 / span 3;
+        grid-row: 1 / span 2;
+
+    }
+}
+
+
+ 
+
+
+
+
+
+
+
