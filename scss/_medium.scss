@@ -32,6 +32,7 @@ div.tablet section {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto;
     column-gap: 10px;
+    row-gap: 10px;
     margin-bottom: 2%;
    
    
@@ -52,7 +53,12 @@ div.tablet section {
 }
 
 div.tablet section div#tabImage {
+    display: block;
+} 
+
+div.tablet section div#tabImage img{
     display: flex;
+    width: 100%;
 } 
 
 div.tablet section div#afterImage {

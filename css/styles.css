@@ -558,6 +558,7 @@ nav {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto;
     column-gap: 10px;
+    row-gap: 10px;
     margin-bottom: 2%; }
     div.tablet section div:nth-child(1) {
       grid-column: 1 / span 2; }
@@ -567,7 +568,11 @@ nav {
       grid-column: 2 / span 2; }
 
   div.tablet section div#tabImage {
-    display: flex; }
+    display: block; }
+
+  div.tablet section div#tabImage img {
+    display: flex;
+    width: 100%; }
 
   div.tablet section div#afterImage {
     display: none; } }
@@ -577,6 +582,9 @@ nav {
     margin: 0 auto;
     grid-template-areas: "header" "navigation" "main" "footer";
     grid-template-columns: 100%; }
+
+  div.tablet section {
+    row-gap: 0; }
 
   nav ul {
     margin-left: 2%; }
