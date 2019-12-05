@@ -152,9 +152,30 @@ main div.story {
 
     figure:nth-child(1){
         grid-column: 1 / span 2;
-
     }
 }
+
+
+
+
+div.tablet div img {
+    display: flex;
+    width: 100%;
+}
+
+div.tablet section {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    row-gap: 25px;
+    margin: $gutter;
+    margin-bottom: 6rem;
+    
+}
+
+
+
+
   
 .clearfix:after {
     content: "";
@@ -185,4 +206,7 @@ div#hamburger a {
     text-decoration: none;
 }
 
+nav {
+    height: 100vh;
+}
 

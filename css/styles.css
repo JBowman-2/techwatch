@@ -500,6 +500,18 @@ main div.story {
   main div.story figure:nth-child(1) {
     grid-column: 1 / span 2; }
 
+div.tablet div img {
+  display: flex;
+  width: 100%; }
+
+div.tablet section {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  row-gap: 25px;
+  margin: 2%;
+  margin-bottom: 6rem; }
+
 .clearfix:after {
   content: "";
   display: table;
@@ -523,6 +535,9 @@ div#hamburger a {
   color: white;
   text-decoration: none; }
 
+nav {
+  height: 100vh; }
+
 @media only screen and (min-width: 600px) {
   #pageWrapper {
     grid-template-areas: "header header" "navigation main" "footer footer";
@@ -535,7 +550,20 @@ div#hamburger a {
     display: none; }
 
   nav ul li a {
-    padding: .8rem 1rem; } }
+    padding: .8rem 1rem; }
+
+  div.tablet section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    column-gap: 10px;
+    margin-bottom: 2%; }
+    div.tablet section div:nth-child(1) {
+      grid-column: 1 / span 2; }
+    div.tablet section div#tabImage:nth-child(1) {
+      grid-column: 1 / span 1; }
+    div.tablet section div#tabText:nth-child(2) {
+      grid-column: 2 / span 2; } }
 @media only screen and (min-width: 900px) {
   #pageWrapper {
     max-width: 70rem;
