@@ -7,6 +7,13 @@
     grid-template-columns: 200px auto;
 
 }
+
+header figure.logo img {
+    width: auto;
+  
+}
+
+
 nav div#links {
     display: none;
 }
@@ -43,6 +50,14 @@ div.tablet section {
 
    
 }
+
+div.tablet section div#tabImage {
+    display: flex;
+} 
+
+div.tablet section div#afterImage {
+    display: none;
+} 
 
 
 

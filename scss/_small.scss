@@ -52,7 +52,7 @@ div#hamburger {
 
 
 header {
-    background-color: $subColor;
+    background-color: darken($primaryColor, 30%);
     padding: .5rem $gutter;
     color: white;
 }
@@ -61,10 +61,12 @@ header {
 header figure.logo {
     float: left;
     margin: 0;
+    
 }
 
 header figure.logo img {
-    margin: 10px 0 10px 0;
+    margin: 5px 0 2px 0;
+    width: 75%
   
 }
 
@@ -81,7 +83,7 @@ nav div#links a {
 }
 
 nav {
-    background-color: $primaryColor;
+    background-color: $minorColor;
 
 }
 
@@ -96,7 +98,7 @@ nav ul li a{
     padding: .8rem $gutter;
     text-decoration: none;
     color: white;
-    background-color: lighten($primaryColor, 20%);
+    background-color: darken($subColor, 10%);
     border-top: 1px solid rgba(0,0,0,0.3);
 
 }
@@ -104,12 +106,13 @@ nav ul li a{
 nav ul li.active a { 
     font-weight: $heavyWeight;
     color: darken($primaryColor, 25%);
-    background-color: lighten($primaryColor, 40%)
+    background-color: lighten($subColor, 20%)
     
 }
 
 nav ul li a:hover {
-    background-color: darken($subColor, 10%);
+    background-color: darken($primaryColor, 30%);
+    color: white;
 }
 
 nav ul.hide {
@@ -140,23 +143,9 @@ main h1 {
     padding: $gutter 0 0 $gutter;
 }
 
-
-
-main div.story {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
-    column-gap: 25px;
-    row-gap: 25px;
-    margin: $gutter;
-
-    figure:nth-child(1){
-        grid-column: 1 / span 2;
-    }
+div.tablet div h2 {
+    color: $subColor;
 }
-
-
-
 
 div.tablet div img {
     display: flex;
@@ -167,14 +156,15 @@ div.tablet section {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
-    row-gap: 25px;
+    row-gap: 15px;
     margin: $gutter;
-    margin-bottom: 6rem;
+    margin-bottom: 1rem;
     
 }
 
-
-
+div.tablet section div#tabImage {
+    display: none;
+} 
 
   
 .clearfix:after {
@@ -185,9 +175,9 @@ div.tablet section {
 
 
 footer {
-    background-color: orange;
+    background-color: darken($primaryColor, 30%);
     text-align: left;
-    color: $primaryColor;
+    color: white;
 }
 
 footer div.copy {
@@ -196,11 +186,11 @@ footer div.copy {
 }
 
 div#hamburger {
-    background-color: $primaryColor;
+    background-color: $minorColor;;
 }
 
 div#hamburger a {
-        margin: .2rem $gutter;
+    margin: .2rem $gutter;
     font-size: 1.6rem;
     color: white;
     text-decoration: none;
