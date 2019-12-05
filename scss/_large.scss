@@ -1,21 +1,31 @@
 
-main, footer {
-    max-width: 80rem;
-    margin: auto;
+#pageWrapper{
+    max-width: 70rem;
+    margin: 0 auto;
+    grid-template-areas: 
+        "header"
+        "navigation"
+        "main"
+        "footer";
+      
+}
+
+
+
+
+nav ul {
+    margin-left: $gutter;
+}
+
+nav ul li {
+    float: left;
 }
 
 nav ul li a {
+    border: none;
+    border-right: 1px solid rgba(0,0,0,0.3);
     padding: .6rem 1rem;
-}
 
-main div.story {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-
-    figure:nth-child(1){
-        grid-column: 1 / span 3;
-        grid-row: 1 / span 2;
-
-    }
 }
 
 

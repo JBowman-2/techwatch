@@ -1,24 +1,23 @@
 
-nav ul {
-    margin-left: $gutter;
+#pageWrapper{
+    grid-template-areas: 
+        "header header"
+        "navigation main"
+        "footer footer";
+
+}
+nav div#links {
+    display: none;
 }
 
-nav ul li {
-    float: left;
+div#hamburger {
+    display: none;
 }
 
 nav ul li a {
-    border: none;
-    border-right: 1px solid rgba(0,0,0,0.3);
     padding: .8rem 1rem;
 
 }
 
-main div.story {
-    grid-template-columns: 1fr 1fr 1fr;
-    figure:nth-child(1){
-        grid-column: 1 / span 3;
 
-    }
-}
 

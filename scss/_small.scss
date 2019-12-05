@@ -13,7 +13,41 @@ body {
 }
 
 
+#pageWrapper{
+    display: grid;
+    grid-template-areas: 
+        "hamburger"
+        "header"
+        "main"
+        "footer"
+        "navigation";
+
+}
+
+
+header { 
+    grid-area: header;
+    
+}
+
+nav {
+    grid-area: navigation;
+}
+
+main {
+    grid-area: main;
+}
+
+footer {
+    grid-area: footer;
+}
+
+div#hamburger {
+    grid-area: hamburger;
+}
+
 /* header */
+
 
 header {
     background-color: $subColor;
@@ -39,6 +73,7 @@ header figure.logo img {
 
 /* navigation */
 
+
 nav button {
     margin: .2rem $gutter;
     background-color: transparent;
@@ -48,7 +83,7 @@ nav button {
 }
 
 nav {
-    background-color: $primaryColor;;
+    background-color: $primaryColor;
 
 }
 
@@ -95,11 +130,7 @@ figure {
     margin: 0px;
 }
 
-div.story figure img {
-    display: flex;
-    width: 100%;
-    border: 2px solid black;
-}
+
 
 figcaption {
     text-align: center;
@@ -135,6 +166,7 @@ main div.story {
 
 
 footer {
+    background-color: orange;
     text-align: left;
     color: $primaryColor;
 }
@@ -143,4 +175,9 @@ footer div.copy {
     text-align: center;
     padding: 1rem;
 }
+
+div#hamburger {
+    background-color: $primaryColor;
+}
+
 
